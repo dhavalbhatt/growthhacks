@@ -1,0 +1,134 @@
+<html>
+<head>
+<title>Overlay</title>
+
+<style>
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+#lp-pom-root { 
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+#lp-pom-root .lp-positioned-content {
+    top: 0px;
+    width: 940px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    position: relative !important;
+}
+#lp-pom-button-18 {
+    display: block;
+    border-style: none;
+    border-radius: 5px;
+    left: 341px;
+    top: 300px;
+    z-index: 3;
+    width: 258px;
+    height: 55px;
+    position: absolute;
+    background: rgba(95,183,96,1);
+    -pie-background: rgba(95,183,96,1);
+    box-shadow: none;
+    text-shadow: none;
+    color: #fff;
+    border-width: undefinedpx;
+    border-color: #undefined;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    font-family: Montserrat;
+    font-style: normal;
+    text-align: center;
+    background-repeat: no-repeat;
+}
+#lp-pom-button-18 {
+	
+	padding-top: 18px;
+}
+#lp-pom-button-211 {
+	padding-top: 18px;
+}
+#lp-pom-button-182 {
+	
+	
+    background-size: 100% 100%;
+    cursor: pointer;
+    height: 22px;
+    position: absolute;
+    right: 40px;
+    top: 32px;
+    -webkit-transition: background-image .3s;
+    transition: background-image .3s;
+    width: 22px;
+	
+	display:none;
+}
+
+
+</style>
+</head>
+<body>
+
+<div style="width:90%;margin:auto;margin-top:50px;">
+<div class="lp-element lp-pom-root" id="lp-pom-root">
+
+<a class="lp-element lp-pom-button" id="lp-pom-button-18" href="#"><span class="label"><strong>START MY FREE TRIAL</strong></span></a>
+
+</div>
+
+<div class="main-box content_wrap" id="popupcode" style="display:none;opacity: 0.8;
+    height: 1000px;
+    width: 100%;
+    background: gainsboro;
+    color: #000;
+    left: 0;
+    top: 0;
+    position: absolute;
+	text-align:center;
+">
+<span class="label" style="margin-top:200px;font-size:30px;display:block;"><strong>Overlay Area</strong></span>
+</div>
+</div>
+<a href="#" id="lp-pom-button-182" style="display:none;" >Close</a>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.js" ></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" ></script>
+<script>
+$(document).ready(function() {	
+$('#lp-pom-button-18').click(function (e) {
+//Cancel the link behavior
+e.preventDefault();
+
+
+$('#popupcode').fadeIn(500);	
+$('#popupcode').fadeTo("slow",0.8);	
+$('#lp-pom-button-182').show(500);
+$('#lp-pom-root').fadeOut(500);
+$("html, body").animate({ scrollTop: 0 }, "slow");
+});
+$('#lp-pom-button-210').click(function (e) {
+	
+//Cancel the link behavior
+e.preventDefault();
+
+$('#popupcode').fadeIn(500);	
+$('#popupcode').fadeTo("slow",0.8);	
+$('#lp-pom-button-182').show(500);
+$('#lp-pom-root').fadeOut(500);
+$("html, body").animate({ scrollTop: 0 }, "slow");
+});
+$('#lp-pom-button-182').click(function (e) {
+//Cancel the link behavior
+e.preventDefault();
+$('#lp-pom-root').fadeIn(500);
+$('#popupcode').fadeOut(500);	
+$('#lp-pom-button-182').hide(500);
+
+});
+
+});
+</script>
+</body></html>
